@@ -5,7 +5,8 @@ This file describes how run_analysis.R script works.
 
 1. Unzip the data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 2. Make sure the file folder and the run_analysis.R script are both in the current working directory.
-3. Use source("run_analysis.R") command in RStudio.
+3. Use library(plyr) to load the package plyr; as a part of the script uses it. 
+4. Use source("run_analysis.R") command in RStudio.
 4. You will find the output file in the current working directory - "Project_Work.txt"
 5. Finally, use below command in RStudio to read the file. 
       temp <- read.table("Project_Work.txt", header = TRUE)
